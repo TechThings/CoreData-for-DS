@@ -30,4 +30,8 @@
 // 4 - Sorting Data in CoreData;
 -(void)sortingData;
 
+// 5 -
++(instancetype)insertNewObjectInManagedObjectContext:(NSManagedObjectContext *)moc;
+
+
 @end

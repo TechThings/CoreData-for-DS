@@ -9,10 +9,14 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
+#import "SecondViewController.h"
+#import "ThirdViewController.h"
+#import "FouthViewController.h"
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (nonatomic, strong) UITabBarController *aTabbarcontroller;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;

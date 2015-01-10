@@ -24,6 +24,12 @@
 		04F3B3481A613FE800EB2432 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3B3471A613FE800EB2432 /* Manager.m */; };
 		04F3B34B1A61444F00EB2432 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3B34A1A61444F00EB2432 /* Teacher.m */; };
 		04F3B34E1A61445000EB2432 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3B34D1A61445000EB2432 /* Student.m */; };
+		04F3B3551A61764400EB2432 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3B3541A61764400EB2432 /* SecondViewController.m */; };
+		04F3B3581A61765400EB2432 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3B3571A61765400EB2432 /* ThirdViewController.m */; };
+		04F3B35B1A61765C00EB2432 /* FouthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3B35A1A61765C00EB2432 /* FouthViewController.m */; };
+		04F3B35E1A61843000EB2432 /* FailedBankInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3B35D1A61843000EB2432 /* FailedBankInfo.m */; };
+		04F3B3611A61843100EB2432 /* FailedBankDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3B3601A61843100EB2432 /* FailedBankDetails.m */; };
+		04F3B3631A6190C600EB2432 /* Banks.json in Resources */ = {isa = PBXBuildFile; fileRef = 04F3B3621A6190C600EB2432 /* Banks.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +74,17 @@
 		04F3B34A1A61444F00EB2432 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
 		04F3B34C1A61445000EB2432 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		04F3B34D1A61445000EB2432 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		04F3B3531A61764400EB2432 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		04F3B3541A61764400EB2432 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		04F3B3561A61765400EB2432 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		04F3B3571A61765400EB2432 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		04F3B3591A61765C00EB2432 /* FouthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FouthViewController.h; sourceTree = "<group>"; };
+		04F3B35A1A61765C00EB2432 /* FouthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FouthViewController.m; sourceTree = "<group>"; };
+		04F3B35C1A61843000EB2432 /* FailedBankInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailedBankInfo.h; sourceTree = "<group>"; };
+		04F3B35D1A61843000EB2432 /* FailedBankInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailedBankInfo.m; sourceTree = "<group>"; };
+		04F3B35F1A61843100EB2432 /* FailedBankDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailedBankDetails.h; sourceTree = "<group>"; };
+		04F3B3601A61843100EB2432 /* FailedBankDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailedBankDetails.m; sourceTree = "<group>"; };
+		04F3B3621A6190C600EB2432 /* Banks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Banks.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +119,10 @@
 				044511B21A6101B200F9A861 /* DetailViewController.m */,
 				044511B71A6106A700F9A861 /* InfoViewController.h */,
 				044511B81A6106A700F9A861 /* InfoViewController.m */,
+				04F3B3521A61762500EB2432 /* Second */,
+				04F3B3511A61762300EB2432 /* Third */,
+				04F3B3501A61762200EB2432 /* Fouth */,
+				04F3B34F1A61762000EB2432 /* New Group */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -128,6 +149,10 @@
 				04F3B34D1A61445000EB2432 /* Student.m */,
 				04F3B3491A61444F00EB2432 /* Teacher.h */,
 				04F3B34A1A61444F00EB2432 /* Teacher.m */,
+				04F3B35F1A61843100EB2432 /* FailedBankDetails.h */,
+				04F3B3601A61843100EB2432 /* FailedBankDetails.m */,
+				04F3B35C1A61843000EB2432 /* FailedBankInfo.h */,
+				04F3B35D1A61843000EB2432 /* FailedBankInfo.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -195,6 +220,41 @@
 				04EF2A7A1A5C2C4900481B0B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04F3B34F1A61762000EB2432 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		04F3B3501A61762200EB2432 /* Fouth */ = {
+			isa = PBXGroup;
+			children = (
+				04F3B3591A61765C00EB2432 /* FouthViewController.h */,
+				04F3B35A1A61765C00EB2432 /* FouthViewController.m */,
+			);
+			name = Fouth;
+			sourceTree = "<group>";
+		};
+		04F3B3511A61762300EB2432 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				04F3B3561A61765400EB2432 /* ThirdViewController.h */,
+				04F3B3571A61765400EB2432 /* ThirdViewController.m */,
+				04F3B3621A6190C600EB2432 /* Banks.json */,
+			);
+			name = Third;
+			sourceTree = "<group>";
+		};
+		04F3B3521A61762500EB2432 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				04F3B3531A61764400EB2432 /* SecondViewController.h */,
+				04F3B3541A61764400EB2432 /* SecondViewController.m */,
+			);
+			name = Second;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +339,7 @@
 			files = (
 				04EF2A6B1A5C2C4900481B0B /* Main.storyboard in Resources */,
 				04EF2A701A5C2C4900481B0B /* LaunchScreen.xib in Resources */,
+				04F3B3631A6190C600EB2432 /* Banks.json in Resources */,
 				04F3B33F1A6115D900EB2432 /* 152.png in Resources */,
 				04EF2A6D1A5C2C4900481B0B /* Images.xcassets in Resources */,
 			);
@@ -299,17 +360,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				044511B31A6101B200F9A861 /* DetailViewController.m in Sources */,
+				04F3B3551A61764400EB2432 /* SecondViewController.m in Sources */,
 				04F3B33A1A61132D00EB2432 /* CoreDataDemo.xcdatamodeld in Sources */,
 				04F3B33D1A61147100EB2432 /* Person.m in Sources */,
 				04F3B3481A613FE800EB2432 /* Manager.m in Sources */,
 				04F3B34B1A61444F00EB2432 /* Teacher.m in Sources */,
+				04F3B3581A61765400EB2432 /* ThirdViewController.m in Sources */,
 				04EF2A621A5C2C4900481B0B /* AppDelegate.m in Sources */,
+				04F3B35E1A61843000EB2432 /* FailedBankInfo.m in Sources */,
 				044511B91A6106A700F9A861 /* InfoViewController.m in Sources */,
+				04F3B35B1A61765C00EB2432 /* FouthViewController.m in Sources */,
 				04F3B3421A61346400EB2432 /* DSModelDemo.m in Sources */,
 				04F3B3451A613FE800EB2432 /* Employee.m in Sources */,
 				04EF2A681A5C2C4900481B0B /* ViewController.m in Sources */,
 				04EF2A5F1A5C2C4900481B0B /* main.m in Sources */,
 				04F3B34E1A61445000EB2432 /* Student.m in Sources */,
+				04F3B3611A61843100EB2432 /* FailedBankDetails.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

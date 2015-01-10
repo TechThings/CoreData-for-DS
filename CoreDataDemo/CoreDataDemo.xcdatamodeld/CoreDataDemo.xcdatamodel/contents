@@ -6,11 +6,23 @@
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="manager" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Manager" inverseName="employees" inverseEntity="Manager" syncable="YES"/>
     </entity>
+    <entity name="FailedBankDetails" representedClassName="FailedBankDetails" syncable="YES">
+        <attribute name="closeDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="zip" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FailedBankInfo" inverseName="detials" inverseEntity="FailedBankInfo" syncable="YES"/>
+    </entity>
+    <entity name="FailedBankInfo" representedClassName="FailedBankInfo" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="detials" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FailedBankDetails" inverseName="info" inverseEntity="FailedBankDetails" syncable="YES"/>
+    </entity>
     <entity name="Manager" representedClassName="Manager" syncable="YES">
         <attribute name="age" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="employees" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Employee" inverseName="manager" inverseEntity="Employee" syncable="YES"/>
+        <relationship name="employees" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Employee" inverseName="manager" inverseEntity="Employee" syncable="YES"/>
     </entity>
     <entity name="Person" syncable="YES">
         <attribute name="age" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
@@ -22,19 +34,21 @@
         <attribute name="age" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="teachers" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Teacher" inverseName="students" inverseEntity="Teacher" syncable="YES"/>
+        <relationship name="teachers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Teacher" inverseName="students" inverseEntity="Teacher" syncable="YES"/>
     </entity>
     <entity name="Teacher" representedClassName="Teacher" syncable="YES">
         <attribute name="age" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="students" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="teachers" inverseEntity="Student" syncable="YES"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Student" inverseName="teachers" inverseEntity="Student" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Person" positionX="-63" positionY="-141" width="128" height="105"/>
-        <element name="Employee" positionX="70" positionY="54" width="128" height="103"/>
-        <element name="Manager" positionX="-126" positionY="54" width="128" height="103"/>
-        <element name="Teacher" positionX="-27" positionY="-9" width="128" height="103"/>
-        <element name="Student" positionX="-18" positionY="0" width="128" height="103"/>
+        <element name="Person" positionX="-227" positionY="-72" width="128" height="105"/>
+        <element name="Employee" positionX="106" positionY="9" width="128" height="103"/>
+        <element name="Manager" positionX="-74" positionY="27" width="128" height="103"/>
+        <element name="Teacher" positionX="-45" positionY="-99" width="128" height="103"/>
+        <element name="Student" positionX="106" positionY="-126" width="128" height="103"/>
+        <element name="FailedBankInfo" positionX="-99" positionY="194" width="135" height="103"/>
+        <element name="FailedBankDetails" positionX="97" positionY="162" width="128" height="103"/>
     </elements>
 </model>

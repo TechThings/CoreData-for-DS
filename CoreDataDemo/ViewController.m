@@ -14,6 +14,7 @@
 #import "InfoViewController.h"
 
 #import "Person.h"
+#import "DSModelDemo.h"
 
 @interface ViewController ()
 
@@ -86,6 +87,9 @@
     
     // 读取数据
     [self readPersonInfo];
+    
+    // test
+    [self testCoreData];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -235,6 +239,11 @@
 -(void)controllerDidChangeContent:(NSFetchedResultsController *)controller
 {
     [_vTableView endUpdates];
+}
+
+-(void)testCoreData
+{
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -99,4 +99,14 @@
     }
 }
 
++(NSString *)entityName
+{
+    return @"Item";
+}
+
++(instancetype)insertNewObjectInManagedObjectContext:(NSManagedObjectContext *)moc
+{
+    return [NSEntityDescription insertNewObjectForEntityForName:[self entityName] inManagedObjectContext:moc];
+}
+
 @end

@@ -15,7 +15,7 @@
 @end
 
 @implementation AppDelegate
-
+@synthesize aTabbarcontroller;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -23,7 +23,19 @@
     ViewController *rootVC = [[ViewController alloc] init];
     UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController:rootVC];
     
-    self.window.rootViewController = rootNav;
+    SecondViewController *secondVC = [[SecondViewController alloc] init];
+    UINavigationController *secondNav = [[UINavigationController alloc] initWithRootViewController:secondVC];
+    
+    ThirdViewController *thirdVC = [[ThirdViewController alloc] init];
+    UINavigationController *thirdNav = [[UINavigationController alloc] initWithRootViewController:thirdVC];
+    
+    FouthViewController *fouthVC = [[FouthViewController alloc] init];
+    UINavigationController *fouthNav = [[UINavigationController alloc] initWithRootViewController:fouthVC];
+    
+    aTabbarcontroller = [[UITabBarController alloc] init];
+    aTabbarcontroller.viewControllers = @[rootNav,secondNav,thirdNav,fouthNav];
+    
+    self.window.rootViewController = aTabbarcontroller;
     
     [self.window makeKeyAndVisible];
     
