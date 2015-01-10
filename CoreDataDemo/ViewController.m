@@ -30,6 +30,38 @@
     return self;
 }
 
+-(void)handleTest
+{
+    for (NSUInteger counter=0; counter<10; counter++)
+    {
+        Person *person = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([Person class]) inManagedObjectContext:_vManagedObjectContext];
+        
+        person.firstName = [NSString stringWithFormat:@"Name_%lu",(unsigned long)counter];
+        person.lastName = [NSString stringWithFormat:@"LastName_%lu",(unsigned long)counter];
+        person.age = [NSNumber numberWithInteger:counter];
+    }
+    
+    NSError *error = nil;
+    if ([_vManagedObjectContext save:&error])
+    {
+        NSLog(@"Managed to populate the database");
+    }
+    else
+    {
+        NSLog(@"Failed to populate the database");
+    }
+}
+
+-(NSFetchRequest *)newFetchRequest
+{
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:NSStringFromClass([Person class])];
+    request.fetchBatchSize = 5;
+    request.predicate = [NSPredicate predicateWithFormat:@"(age > 5) AND (age < 8)"];
+    request.resultType = NSManagedObjectResultType;
+    
+    return request;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -38,6 +70,9 @@
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addPerson)];
     self.navigationItem.rightBarButtonItem = rightItem;
+    
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithTitle:@"Test" style:UIBarButtonItemStyleDone target:self action:@selector(handleTest)];
+    self.navigationItem.leftBarButtonItem = leftItem;
     
     /*
      * 部门 (销售、人事、研发、行政、编辑)
@@ -158,6 +193,9 @@
     _vManagedObjectContext = managedObjectContext;
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Person"];
+    
+    // 查找指定数据...
+//    NSFetchRequest *fetchRequest = [self newFetchRequest];
     
     NSSortDescriptor *ageSort = [[NSSortDescriptor alloc] initWithKey:@"age" ascending:YES];
     NSSortDescriptor *firstNameSort = [[NSSortDescriptor alloc] initWithKey:@"firstName" ascending:YES];
