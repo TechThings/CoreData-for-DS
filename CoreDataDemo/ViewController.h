@@ -8,7 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+#import <CoreData/CoreData.h>
+
+@interface ViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,NSFetchedResultsControllerDelegate>
+
+{
+    UITableView *_vTableView;
+    NSArray *_vGroups;
+    
+    NSFetchedResultsController *_vFrc;
+    
+    NSManagedObjectContext *_vManagedObjectContext;
+}
 
 
 @end
