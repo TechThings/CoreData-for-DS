@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		044511B31A6101B200F9A861 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044511B21A6101B200F9A861 /* DetailViewController.m */; };
 		044511B91A6106A700F9A861 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044511B81A6106A700F9A861 /* InfoViewController.m */; };
+		04A8448A1A622C2300A99F70 /* BankDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A844891A622C2300A99F70 /* BankDetailViewController.m */; };
+		04A8448D1A62337100A99F70 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A8448C1A62337100A99F70 /* Teacher.m */; };
+		04A844901A62337200A99F70 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A8448F1A62337200A99F70 /* Student.m */; };
+		04A844931A62337200A99F70 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A844921A62337200A99F70 /* Tag.m */; };
 		04EF2A5F1A5C2C4900481B0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EF2A5E1A5C2C4900481B0B /* main.m */; };
 		04EF2A621A5C2C4900481B0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EF2A611A5C2C4900481B0B /* AppDelegate.m */; };
 		04EF2A681A5C2C4900481B0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EF2A671A5C2C4900481B0B /* ViewController.m */; };
@@ -22,8 +26,6 @@
 		04F3B3421A61346400EB2432 /* DSModelDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3B3411A61346400EB2432 /* DSModelDemo.m */; };
 		04F3B3451A613FE800EB2432 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3B3441A613FE800EB2432 /* Employee.m */; };
 		04F3B3481A613FE800EB2432 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3B3471A613FE800EB2432 /* Manager.m */; };
-		04F3B34B1A61444F00EB2432 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3B34A1A61444F00EB2432 /* Teacher.m */; };
-		04F3B34E1A61445000EB2432 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3B34D1A61445000EB2432 /* Student.m */; };
 		04F3B3551A61764400EB2432 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3B3541A61764400EB2432 /* SecondViewController.m */; };
 		04F3B3581A61765400EB2432 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3B3571A61765400EB2432 /* ThirdViewController.m */; };
 		04F3B35B1A61765C00EB2432 /* FouthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3B35A1A61765C00EB2432 /* FouthViewController.m */; };
@@ -47,6 +49,14 @@
 		044511B21A6101B200F9A861 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		044511B71A6106A700F9A861 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		044511B81A6106A700F9A861 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		04A844881A622C2300A99F70 /* BankDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankDetailViewController.h; sourceTree = "<group>"; };
+		04A844891A622C2300A99F70 /* BankDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankDetailViewController.m; sourceTree = "<group>"; };
+		04A8448B1A62337100A99F70 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		04A8448C1A62337100A99F70 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		04A8448E1A62337200A99F70 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		04A8448F1A62337200A99F70 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		04A844911A62337200A99F70 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		04A844921A62337200A99F70 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
 		04EF2A591A5C2C4900481B0B /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EF2A5D1A5C2C4900481B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04EF2A5E1A5C2C4900481B0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -70,10 +80,6 @@
 		04F3B3441A613FE800EB2432 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		04F3B3461A613FE800EB2432 /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
 		04F3B3471A613FE800EB2432 /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
-		04F3B3491A61444F00EB2432 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
-		04F3B34A1A61444F00EB2432 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
-		04F3B34C1A61445000EB2432 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
-		04F3B34D1A61445000EB2432 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		04F3B3531A61764400EB2432 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		04F3B3541A61764400EB2432 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		04F3B3561A61765400EB2432 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
@@ -145,14 +151,16 @@
 				04F3B3441A613FE800EB2432 /* Employee.m */,
 				04F3B3401A61346400EB2432 /* DSModelDemo.h */,
 				04F3B3411A61346400EB2432 /* DSModelDemo.m */,
-				04F3B34C1A61445000EB2432 /* Student.h */,
-				04F3B34D1A61445000EB2432 /* Student.m */,
-				04F3B3491A61444F00EB2432 /* Teacher.h */,
-				04F3B34A1A61444F00EB2432 /* Teacher.m */,
 				04F3B35F1A61843100EB2432 /* FailedBankDetails.h */,
 				04F3B3601A61843100EB2432 /* FailedBankDetails.m */,
 				04F3B35C1A61843000EB2432 /* FailedBankInfo.h */,
 				04F3B35D1A61843000EB2432 /* FailedBankInfo.m */,
+				04A844911A62337200A99F70 /* Tag.h */,
+				04A844921A62337200A99F70 /* Tag.m */,
+				04A8448E1A62337200A99F70 /* Student.h */,
+				04A8448F1A62337200A99F70 /* Student.m */,
+				04A8448B1A62337100A99F70 /* Teacher.h */,
+				04A8448C1A62337100A99F70 /* Teacher.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -234,6 +242,8 @@
 			children = (
 				04F3B3591A61765C00EB2432 /* FouthViewController.h */,
 				04F3B35A1A61765C00EB2432 /* FouthViewController.m */,
+				04A844881A622C2300A99F70 /* BankDetailViewController.h */,
+				04A844891A622C2300A99F70 /* BankDetailViewController.m */,
 			);
 			name = Fouth;
 			sourceTree = "<group>";
@@ -364,18 +374,20 @@
 				04F3B33A1A61132D00EB2432 /* CoreDataDemo.xcdatamodeld in Sources */,
 				04F3B33D1A61147100EB2432 /* Person.m in Sources */,
 				04F3B3481A613FE800EB2432 /* Manager.m in Sources */,
-				04F3B34B1A61444F00EB2432 /* Teacher.m in Sources */,
 				04F3B3581A61765400EB2432 /* ThirdViewController.m in Sources */,
 				04EF2A621A5C2C4900481B0B /* AppDelegate.m in Sources */,
 				04F3B35E1A61843000EB2432 /* FailedBankInfo.m in Sources */,
+				04A8448A1A622C2300A99F70 /* BankDetailViewController.m in Sources */,
 				044511B91A6106A700F9A861 /* InfoViewController.m in Sources */,
 				04F3B35B1A61765C00EB2432 /* FouthViewController.m in Sources */,
+				04A8448D1A62337100A99F70 /* Teacher.m in Sources */,
 				04F3B3421A61346400EB2432 /* DSModelDemo.m in Sources */,
 				04F3B3451A613FE800EB2432 /* Employee.m in Sources */,
 				04EF2A681A5C2C4900481B0B /* ViewController.m in Sources */,
+				04A844931A62337200A99F70 /* Tag.m in Sources */,
 				04EF2A5F1A5C2C4900481B0B /* main.m in Sources */,
-				04F3B34E1A61445000EB2432 /* Student.m in Sources */,
 				04F3B3611A61843100EB2432 /* FailedBankDetails.m in Sources */,
+				04A844901A62337200A99F70 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

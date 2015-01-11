@@ -2,7 +2,7 @@
 //  Student.m
 //  CoreDataDemo
 //
-//  Created by mac on 15/1/10.
+//  Created by mac on 15/1/11.
 //  Copyright (c) 2015年 DS. All rights reserved.
 //
 
@@ -13,8 +13,9 @@
 @implementation Student
 
 @dynamic age;
-@dynamic lastName;
 @dynamic firstName;
-@dynamic teachers;
+@dynamic lastName;
+@dynamic teacher;
+@dynamic tags;
 
 @end

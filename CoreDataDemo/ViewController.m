@@ -234,6 +234,16 @@
     {
         [_vTableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationMiddle];
     }
+    else if (type == NSFetchedResultsChangeUpdate)
+    {
+        
+    }
+    else if (type == NSFetchedResultsChangeMove)
+    {
+        [_vTableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [_vTableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
+    
 }
 
 -(void)controllerDidChangeContent:(NSFetchedResultsController *)controller

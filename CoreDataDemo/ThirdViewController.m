@@ -92,6 +92,9 @@
     for (FailedBankInfo *info in fetchedObjects)
     {
         NSLog(@"Name = %@",info.name);
+        
+        FailedBankDetails *detail = info.detials;
+        NSLog(@"CloseDate = %@",detail.closeDate);
     }
 }
 

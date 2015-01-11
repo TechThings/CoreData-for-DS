@@ -1,5 +1,5 @@
 //
-//  Teacher.h
+//  Tag.h
 //  CoreDataDemo
 //
 //  Created by mac on 15/1/11.
@@ -11,15 +11,13 @@
 
 @class Student;
 
-@interface Teacher : NSManagedObject
+@interface Tag : NSManagedObject
 
-@property (nonatomic, retain) NSNumber * age;
-@property (nonatomic, retain) NSString * firstName;
-@property (nonatomic, retain) NSString * lastName;
+@property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSSet *students;
 @end
 
-@interface Teacher (CoreDataGeneratedAccessors)
+@interface Tag (CoreDataGeneratedAccessors)
 
 - (void)addStudentsObject:(Student *)value;
 - (void)removeStudentsObject:(Student *)value;

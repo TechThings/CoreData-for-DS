@@ -1,20 +1,18 @@
 //
-//  Teacher.m
+//  Tag.m
 //  CoreDataDemo
 //
 //  Created by mac on 15/1/11.
 //  Copyright (c) 2015年 DS. All rights reserved.
 //
 
-#import "Teacher.h"
+#import "Tag.h"
 #import "Student.h"
 
 
-@implementation Teacher
+@implementation Tag
 
-@dynamic age;
-@dynamic firstName;
-@dynamic lastName;
+@dynamic name;
 @dynamic students;
 
 @end
